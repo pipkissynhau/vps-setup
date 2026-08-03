@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefall
+set -euo pipefail
 
 # =================================   CONFIG    ================================= 
 
@@ -72,8 +72,6 @@ else
   rm -f "$SSHD_CONFIG"
   exit 1
 fi
-
-if
 
 #   ufw
 
