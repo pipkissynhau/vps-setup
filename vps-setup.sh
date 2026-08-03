@@ -2,7 +2,8 @@
 
 set -euo pipefall
 
-#   config
+# =================================   CONFIG    ================================= 
+
 NEW_USER=""
 NEW_USER_PASSWORD=""
 
@@ -12,6 +13,8 @@ SSH_PUBKEY=""
 PACKAGES=(
     ufw
 )
+
+# =================================   CONFIG    ================================= 
 
 #   root check
 if [[ $EUID -ne 0 ]]; then
