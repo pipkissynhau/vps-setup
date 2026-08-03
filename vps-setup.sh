@@ -27,10 +27,10 @@ log() {
 }
 
 log "Updating system..."
-apt update -y $$ apt upgrade -y
+apt update -y && apt upgrade -y
 
 log "Installing packages: ${PACKAGES[*]}"
-apt install -y "${PACKAGES[*]}"
+apt install -y "${PACKAGES[@]}"
 
 log "Adding new user $NEW_USER"
 adduser --disabled-password --gecos "" "$NEW_USER"
